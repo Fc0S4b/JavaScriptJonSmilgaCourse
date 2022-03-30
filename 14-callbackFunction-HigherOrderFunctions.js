@@ -27,6 +27,6 @@ function greet(name, cb) {
   console.log(`${cb(name)}, my name is  ${myName}`);
 }
 
-// invocar las funciones no las hace ser callbacks
+// invocar las funciones no las hace ser callbacks, solo se mencionan (por ejemplo invocarla sería escribir morning() pero acá solo se escribe morning)
 greet('bobo', morning);
 greet('peter', afternoon);
