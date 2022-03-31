@@ -3,6 +3,7 @@
 // - order matters
 // -other ways to achieve the same result (ES6 modules, fetch DB)
 // - not limited to just static data
+
 const students = [
   {
     id: 1,
@@ -36,8 +37,7 @@ const students = [
   },
 ];
 
-// también se pueden guardar funciones
-
 function sayName(name) {
   console.log(name);
 }
+
