@@ -19,17 +19,17 @@ const result = document.querySelector('.lorem-text');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
   // console.log('hello'); //sin preventDefault se aparece por solo un segundo el hello
-  const value = parseInt(amount.value); // parseInt porque sino muestra un string (número en azul, string en negro)
+  const value = parseInt(amount.value); // parseInt porque sino muestra un string (número en azul, string en negro). el value es para acceder al valor del input
   // console.log(value);
   const random = Math.floor(Math.random() * text.length);
-  console.log(isNaN(value));
+  // console.log(isNaN(value));
 
   // empty
   // -1
   // >9
   // si sucede alguno de estos tres casos, entonces mostrará 1 párrafo
   if (isNaN(value) || value <= 0 || value > 9) {
-    result.innerHTML = `<p class="result">${text[random]}</p>`;
+    result.innerHTML = `<p class="result">${text[random]}</p>`; //solo accederá a 1 solo párrafo random para mostrarlo
   } else {
     let tempText = text.slice(0, value);
     // console.log(tempText);
