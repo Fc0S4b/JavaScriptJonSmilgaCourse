@@ -66,7 +66,7 @@ Gallery.prototype.closeModal = function () {
   this.nextBtn.removeEventListener('click', this.nextImage);
   this.prevBtn.removeEventListener('click', this.prevImage);
   this.modalImages.removeEventListener('click', this.chooseImage);
-};
+}; 
 Gallery.prototype.nextImage = function () {
   const selected = this.modalImages.querySelector('.selected');
   const next =
