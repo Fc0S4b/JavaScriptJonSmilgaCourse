@@ -35,3 +35,4 @@ bob.sayName(); //{ firstName: 'bob', lastName: 'smith', sayName: [Function: sayN
 // Hello, my name is bob smith
 // anna.sayName(); //{} //window object
 // Hello, my name is undefined undefined //en window no tenemos firstName ni lastName por eso aparece undefined
+anna.sayName();
